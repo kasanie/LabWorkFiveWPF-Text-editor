@@ -1,0 +1,19 @@
+﻿<Window x:Class="LabWorkFiveWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LabWorkFiveWPF"
+        mc:Ignorable="d"
+        Title="Text editor" Height="350" Width="350">
+    <Grid>
+        <Menu x:Name="MenuWindow" HorizontalAlignment="Left" Height="19" VerticalAlignment="Top" Width="342">
+            <MenuItem x:Name="MenuOS" Header="Menu" Height="20" Width="120" RenderTransformOrigin="0.5,0.5">
+                <MenuItem x:Name="OpenText" Header="Open" Click="OpenText_Click"/>
+                <MenuItem x:Name="SaveText" Header="Save" Click="SaveText_Click"/>
+            </MenuItem>
+        </Menu>
+        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Height="300" Margin="0,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="342"/>
+
+    </Grid>
+</Window>
